@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="styleNb&Sb.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+    </style>
+
+    <title>NavBar & SideBar | Ranoco, Alenbert B. </title>
+</head>
+<body>
+
+    <!-- Fixed Navbar -->
+    <div class="navbar-fixed">
+
+        <!-- Dropdown Structure -->
+        <ul id="dropdown1" class="dropdown-content">
+            <li><a href="#" style="color: #5851db;">Drop</a></li>
+            <li><a href="#" style="color: #5851db;">Down</a></li>
+            <li class="divider"></li>
+            <li><a href="#" style="color: #5851db;">Content</a></li>
+        </ul>
+
+        <nav style="border-radius: 0%; width: 100%; box-shadow: 0px 0px; background-color: #fff5fec4; backdrop-filter: blur(8px);">
+            
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="#" class="brand-logo" style="color:#5b44af; letter-spacing: 6px; font-size: 120%;">
+                        <i class="fa-solid fa-scroll fa-lg">PAGE</i>
+                    </a>
+                </div>
+                <ul class="right hide-on-med-and-down" style="margin-right: 5%;">
+                    <li>
+                        <a href="#" style="color:#5b44af;">Fixed</a>
+                    </li>
+                    <li>
+                        <a href="#" style="color:#5b44af;">Navbar</a>
+                    </li>
+                    <li>
+                        <a style="color:#5b44af;" class="dropdown-trigger" data-target="dropdown1">Dropdown
+                        <i class="material-icons right">arrow_drop_down</i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <br>
+    <header style="margin-left: 10%; margin-right: 10%;">
+        <p style="text-align: center;">Sample Website | Alenbert B. Ranoco</p>
+        <h1 class="heading" style="text-transform: uppercase; text-align: center; color: aliceblue;">NavBar & SideBar</h1>
+        <!--".divider" is used to create a divider line-->
+        <div class="divider"></div>
+
+        <p class="center">The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+    </header>
+    <br>
+
+        <!-- Right Aligned Links -->
+        <div class="card-panel">
+            
+            <h3 style="color:#6b61f1;">Right Aligned Links</h3>
+                    <p style="color: #5E5245">To right align your navbar links, just add a <strong>right</strong> class to your &lt;ul&gt; that contains them.</p>
+                    <br>
+            <nav style="background-color: #FF0000;">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo youtube">
+                            <i class="fa-brands fa-youtube fa-lg"></i>
+                        </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">Shorts</a>
+                        </li>
+                        <li>
+                            <a href="#">Trending</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Left Aligned Links -->
+        <div class="card-panel">
+
+            <h3 style="color:#6b61f1; ">Left Aligned Links</h3>
+                    <p style="color: #5E5245">To left align your navbar links, just add a <strong>left</strong> class to your &lt;ul&gt; that contains them.</p>
+                    <br>
+            <nav style="background-color: #4267B2;">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo right">
+                            <i class="fa-brands fa-facebook fa-lg"></i>
+                        </a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li>
+                            <a href="#">Profile</a>
+                        </li>
+                        <li>
+                            <a href="#">Friends</a>
+                        </li>
+                        <li>
+                            <a href="#">Messenger</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Centering the logo -->
+        <div class="card-panel">
+
+            <h3 style="color:#6b61f1; ">Centering the logo</h3>
+                    <p style="color: #5E5245">The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the <strong>center</strong> class to your &lt;a class="brand-logo"&gt;. You will have to make sure yourself that links do not overlap if you use this.</p>
+                    <br>
+            <nav style="background-color: #1DB954;">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo center">
+                            <i class="fa-brands fa-spotify fa-lg"></i>
+                        </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#">Log in</a>
+                        </li>
+                        <li>
+                            <a href="#">Trending</a>
+                        </li>
+                        <li>
+                            <a href="#">Premium</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Active Items -->
+        <div class="card-panel">
+
+            <h3 style="color:#6b61f1; ">Active Items</h3>
+                    <p style="color: #5E5245">Add <strong>active</strong> class to your li tags to denote the current page.</p>
+                    <br>
+            <nav style="background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo center">
+                            <i class="fa-brands fa-instagram fa-lg"></i>
+                        </a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li>
+                            <a href="#">Posts</a>
+                        </li>
+                        <li>
+                            <a href="#">Following</a>
+                        </li>
+                        <li class="active">
+                            <a href="#">Followers</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Extended Navbar with Tabs -->
+        <div class="card-panel">
+
+            <h3 style="color:#6b61f1; ">Extended Navbar with Tabs</h3>
+                    <p style="color: #5E5245">To add extended components to the navbar, add the class <strong>nav-extended</strong> to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.</p>
+                    <br>
+    <nav class="nav-extended" style="background:linear-gradient(30deg, #00adee, #000000);">
+        <div class="container">
+            <div class="nav-wrapper">
+
+                <a href="#" class="brand-logo center">
+                    <i class="fa-brands fa-steam fa-lg"></i>
+                </a>
+
+                <!-- SideNav Menu on Mobile -->
+                <!-- sidenav-trigger acts when the width is too small-->
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="active">
+                        <a href="#">Store</a>
+                    </li>
+                    <li>
+                        <a href="#">Top Sellers</a>
+                    </li>
+                    <li>
+                        <a href="#">Categories</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <!-- Add "Disabled" inside a class tab of <li> to disable a tab -->
+        <!-- Add "Active" inside a class tab of <a> to activate a tab -->
+        <div class="nav-content">
+            <ul class="tabs tabs-transparent">
+                <li class="tab">
+                    <a href="#test1">Sea of Thieves</a>
+                </li>
+                <li class="tab">
+                    <a href="#test2">CSGO</a>
+                </li>
+                <li class="tab">
+                    <a href="#test3">Among Us</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- SideNav Structure -->
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a href="#" class="sidenav-trigger">
+                    <i class="fa-brands fa-steam large"></i>
+                    </a>
+            </li>
+            <br>
+            <li>
+                <a href="#">Store</a>
+            </li>
+            <li>
+                <a href="#">Top Sellers</a>
+            </li>
+            <li>
+                <a href="#">Categories</a>
+            </li>
+        </ul>
+            
+        <!-- Tab Contents Structure -->
+        <div class="row center">
+            <div class="col s12" id="test1">
+                <div class="images-container">
+                    <img src="img/image(9).jpg" alt="SOT" class="responsive-img materialboxed" style="border-radius: 10px;">
+                </div>
+            </div>
+            <div class="col s12" id="test2">
+                <div class="images-container">
+                    <img src="img/image(10).png" alt="CSGO" class="responsive-img materialboxed" style="border-radius: 10px;">
+                </div>
+            </div>
+            <div class="col s12" id="test3">
+                <div class="images-container">
+                    <img src="img/image(11).png" alt="AU" class="responsive-img materialboxed" style="border-radius: 10px;">
+                </div>
+            </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Fixed Navbar -->
+    <div class="card-panel">
+        <h3 style="color:#6b61f1; ">Fixed Navbar</h3>
+                    <p style="color: #5E5245">To make the navbar fixed, you have to add an outer wrapping div with the class <strong>navbar-fixed</strong>. This will offset your other content while making your nav fixed. You can adjust the height of this outer div to change how much offset is on your content.</p>
+    </div>
+
+    <!-- Navbar dropdown Menu -->
+    <div class="card-panel">
+        <h3 style="color:#6b61f1; ">Navbar Dropdown Menu</h3>
+                    <p style="color: #5E5245">To add a navbar dropdown menu, add the <strong>ul dropdown structure</strong>  into the page. Then, add an <strong>element to trigger</strong> the dropdown menu. Make sure to supply the id of the dropdown structure to the data-target attribute of the dropdown trigger.
+                    <br><br>
+                    To activate the dropdown menu, insert this line of code into your JavaScript file, within the <strong>$( document ).ready(function)</strong> block.
+                    <br>
+                    <strong>$(".dropdown-trigger").dropdown();</strong>
+                    </p>
+            <br>
+        <!-- Dropdown Trigger -->
+        <!-- Contains data-target-->
+        <div class="container" style="text-align: center;">
+            <a class='dropdown-trigger btn' data-target='dropdown2'>Hover To Drop</a>
+        </div>
+        <!-- Dropdown Structure -->
+        <!-- Contains id identical to data-target -->
+        <ul id="dropdown2" class="dropdown-content">
+            <li><a href="#" style="color: #5851db;">Drop</a></li>
+            <li><a href="#" style="color: #5851db;">Everything</a></li>
+            <li><a href="#" style="color: #5851db;">Now</a></li>
+        </ul>
+    </div>
+
+    <!-- Icon Links -->
+    <div class="card-panel">
+
+        <h3 style="color:#6b61f1; ">Icon Links</h3>
+                <p style="color: #5E5245">You can <strong>add icons into links</strong>. For icon only links you don't need any additional class. Just pop the i tag in and it will work.
+                <br><br>
+                For adding an icon to a text link you need to add either a left or right class to the icon depending on where you want the icon to be.</p>
+                <br>
+        <nav style="background-color: #9146FF;">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo center">
+                        <i class="fa-brands fa-twitch fa-lg"></i>
+                    </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#"><i class="fa-solid fa-crown"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-user left"></i>Log in</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Buttons -->
+    <div class="card-panel">
+
+        <h3 style="color:#6b61f1; ">Buttons</h3>
+                <p style="color: #5E5245">You can add buttons into links. For buttons you don't need any additional class. Just pop the <strong>.btn class on the a tag</strong>.</p>
+                <br>
+        <nav style="background-color: #131313;">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo right">
+                        <i class="fa-brands fa-unity fa-lg"></i>
+                    </a>
+                <ul class="left hide-on-med-and-down">
+                    <li><a class="btn waves-effect">Button</a></li>
+                    <li><a class="btn waves-effect">Button w/ Icon</a></li>
+                    <li><a class="btn-large waves-effect">Large Button</a></li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Halfway FAB in Extended Navbar -->
+    <div class="card-panel">
+
+        <h3 style="color:#6b61f1; ">Halfway FAB in Extended Navbar</h3>
+                <p style="color: #5E5245">Add a <strong>halfway FAB</strong> to your extended navbar.</p>
+                <br>
+<nav class="nav-extended" style="background:linear-gradient(190deg, #38ee00, #000000);">
+    <div class="container">
+        <div class="nav-wrapper">
+
+            <a href="#" class="brand-logo center">
+                <i class="fa-brands fa-xbox fa-lg"></i>
+            </a>
+
+            <!-- SideNav Menu on Mobile -->
+            <!-- sidenav-trigger acts when the width is too small-->
+            <a href="#" data-target="mobile-demo1" class="sidenav-trigger">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li>
+                    <a href="#">Gamepass</a>
+                </li>
+                <li>
+                    <a href="#">Support</a>
+                </li>
+                <li>
+                    <a href="#">All Microsoft</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Title of Extended Navbar -->
+    <div class="nav-content">
+        <span class="nav-title" style="text-indent: 30%;">XBOX</span>
+            <a class="btn-floating btn-large halfway-fab waves-effect green"><i class="material-icons">add</i>
+            </a>
+    </div>
+
+    <!-- SideNav Structure -->
+    <ul class="sidenav" id="mobile-demo1">
+        <li>
+            <a href="#" class="sidenav-trigger">
+                <i class="fa-brands fa-xbox large"></i>
+            </a>
+        </li>
+        <br>
+        <li>
+            <a href="#">Store</a>
+        </li>
+        <li>
+            <a href="#">Top Sellers</a>
+        </li>
+        <li>
+            <a href="#">Categories</a>
+        </li>
+    </ul>
+    </nav>
+    <br>
+</div>
+    <!-- Search Bar -->
+    <div class="card-panel">
+        <h3 style="color:#6b61f1; ">Search Bar</h3>
+                <p style="color: #5E5245">You can add a search form in the navbar.</p>
+                <br>
+        <nav style="background-color: #373f39;">
+            <div class="nav-wrapper">
+                <!-- form is required for search boxes -->
+                <form>  
+                    <!-- input-field is the blank bar that requires input -->
+                    <div class="input-field">
+                        <input type="search" id="search" required>
+                        <label for="search" class="label-icon"><i class="fa-solid fa-magnifying-glass"></i></label>
+                        <i class="material-icons">close</i>
+                    </div>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+<!-- Mobile Collapse Button -->
+    <div class="card-panel">
+        <h3 style="color:#6b61f1; ">Mobile Collapse Button</h3>
+                <p style="color: #5E5245">When your nav bar is resized, you will see that the links on the right turn into a hamburger icon menu. Take a look at the example below to get this functionality. <strong>Add the entire sidenav-trigger line to your nav.</strong></p>
+                <br>
+    <nav style="background:linear-gradient(-120deg, #4285f4, #082044);">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo right"><i class="fa-brands fa-trello fa-lg"></i></a>
+                
+                <!-- Sidenav with data target: mobile-demo2 -->
+                <a href="#" data-target="mobile-demo2" class="sidenav-trigger left"><i class="fa-solid fa-bars"></i></a>
+                    
+                    <ul class="left hide-on-med-and-down">
+                        <li><a class="btn waves-effect white blue-text">Sign up</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Solution</a></li>
+                        <li><a href="#">Plans</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+            </div>
+        </div>
+        </nav>
+
+        <!-- Sidenav Structure with id: mobile-demo2-->
+        <ul class="sidenav" id="mobile-demo2">
+            <li>
+                <a href="#" class="sidenav-trigger">
+                    <i class="fa-brands fa-trello large"></i>
+                </a>
+            </li>
+            <br>
+            <li>
+                <a href="#">Features</a>
+            </li>
+            <li>
+                <a href="#">Solutions</a>
+            </li>
+            <li>
+                <a href="#">Plans</a>
+            </li>
+            <li>
+                <a href="#">Pricing</a>
+            </li>
+            <li>
+                <a class="btn waves-effect blue white-text">Sign up</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <!--Create enough spaces for our webpage-->
+    <div style="height: 100px;"></div>
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //Tabs Init
+            $('.tabs').tabs({
+            });
+            //SideNav Init
+            $('.sidenav').sidenav({
+                edge:'right',
+                inDuration:700,
+            });
+            //Materialbox Init
+            $('.materialboxed').materialbox({
+            })
+            //Dropdown Init
+            $('.dropdown-trigger').dropdown({
+                hover: true,
+                coverTrigger: false,
+            });
+        });
+    </script>
+</body>
+</html>

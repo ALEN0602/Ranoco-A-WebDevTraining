@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="styleC&T.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+    </style>
+    <!-- This is a comment -->
+    <title>Typography & Colors</title>
+</head>
+<body">
+
+    <!--Typography-->
+    <p style="text-align: center;" class="grey-text text-darken-2">Sample Website | Alenbert B. Ranoco</p>
+    <h1 class="center" style="text-transform: uppercase;">Typography</h1>
+
+    <!--".divider" is used to create a divider line-->
+    <div class="divider"></div>
+    <br>
+
+    <!--".container is used as a container"-->
+    <div class="container">
+        <h3>Headers</h3>
+    
+        <!--You can use class="" in order to change color of text (grey-text-text-darken-2)-->
+        <p class="grey-text text-darken-2">We provide some basic styling on header tags. In the example, you can see the the 6 header tags' different sizes.
+        </p>
+
+            <!--To create a card panel with shadow-->
+            <div class="card-panel" style="text-align: center;">
+                <h1>Heading h1</h1>
+                <h2>Heading h2</h2>
+                <h3>Heading h3</h3>
+                <h4>Heading h4</h4>
+                <h5>Heading h5</h5>
+                <h6>Heading h6</h6>
+                <br>
+            </div>
+                <br><br>
+
+            <h3>Block Quotes</h3>
+            <p class="grey-text text-darken-2">Blockquotes are mainly used to give emphasis to a quote or citation. You can also use these for some extra text hierarchy and emphasis.</p>
+            <!--Used to create a blockquote-->
+            <blockquote class="grey-text text-darken-2">This is an example quotation that uses the blockquote tag.
+                Here is another line to make it look bigger.
+            </blockquote>
+
+            <div class="card-panel" style="color: #722f2f;">
+                <code>
+                    &lt;blockquote&gt; <br>
+                    This is an example quotation that uses the blockquote tag. <br>
+                    &lt;blockquote&gt;
+                </code>
+            </div>
+            <br><br>
+
+            <!--Flow Text-->
+            <h3>Flow Text</h3>
+            <button class="btn">toggle flow-text</button>
+            <div class="card-panel grey-text text-darken-2">
+                
+                <p class="flow-text grey-text text-darken-2"> One common flaw we've seen in many frameworks is a lack of support for truly responsive text. While elements on the page resize fluidly, text still resizes on a fixed basis. To ameliorate this problem, for text heavy pages, we've created a class that fluidly scales text size and line-height to optimize readability for the user. Line length stays between 45-80 characters and line height scales to be larger on smaller screens. 
+                To see Flow Text in action, slowly resize your browser and watch the size of this text body change! Use the button above to toggle off/on flow-text to see the difference!
+                </p>
+            </div>
+            
+            <br>
+            <p class="grey-text text-darken-2">To use flow-text on a body of text, simply just add the class flow-text to a tag, see the code below.</p>
+            
+            <div class="card-panel" style="color: #722f2f;">
+                <code>
+                    &lt;p class="flow-text"&gt;
+                    I am Flow Text
+                    &lt;/p&gt;
+                </code>
+            </div>
+            <br><br>
+
+            <div class="box">
+
+                <div><h4>Help Materialize Grow</h4>
+                    <p class="text1">We hope you have enjoyed using Materialize and if you feel like it has helped you out and want to support the team you can help us by donating or backing us on Patreon. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+                    
+                    <button class="btn">Support Us</button>
+                </div>
+
+                <div><h4>Join the Discussion</h4>
+                    <p class="text2">We have a Gitter chat room set up where you can talk directly with us. Come in and discuss new features, future goals, general problems or questions, or anything else you can think of. </p>
+
+                    <button class="btn">Chat</button>
+                </div>
+
+                <div><h4>Connect</h4>
+                    <button class="fa-brands fa-github" style="width: 90px; height: 30px; font-size: 110%;"> Star</button>
+                    <button class= "btn1" style="width: 90px; height: 30px; font-size: 110%"><strong>38,832</strong></button> 
+                    <br><br>
+                    <button class= "fa-brands fa-twitter" style="width: 185px; height: 30px; font-size: 65%; border-radius: 10px; background-color: deepskyblue; border-color:deepskyblue; color:aliceblue;"> Follow @MaterializeCSS</button>
+                </div>
+            </div>
+    </div>
+    
+    <div style="height: 100px;"></div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

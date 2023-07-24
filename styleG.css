@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+nav{
+    background: rgb(43, 202, 189);
+    background: linear-gradient(148deg, rgb(43, 202, 189) 0%, rgba(0,0,0,1) 84%);
+}
+.tab{
+    width: 90%;
+    font-weight: 500;
+}
+.tab ul li a:hover{
+    color: aqua;
+}
+#Grid-Home{
+    min-height: 100vh;
+
+    /*To center the elements*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+
+    /*Text style*/
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Fredoka', sans-serif;
+}
+#Grid-Home h1{
+    font-size: 10vh;
+}
+#container-box{
+    width: 25vw;
+    margin: 1.5vw;
+    display: grid;
+    grid-template-columns: 10vw 10vw;
+    grid-template-rows: 10vw 10vw;
+    row-gap: 1vw;
+    column-gap: 1vw;
+    justify-content:right;
+    align-items:right;
+}
+#container-box div{
+    border-radius: 10px;
+    font-size: 7vmax;
+    color: black;
+}
+#container-one p{
+    font-size: 2.3vh;
+}
+#container-two p{
+    font-size: 2.3vh;
+}
+
+/* 2nd Section */
+#Grid-Container{
+    min-height: 100vh;
+
+    /*To center the elements*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+
+    /*Text style*/
+    font-family: 'Fredoka', sans-serif;
+}
+#container-two{
+    text-align: right;
+}
+
+/* 3rd Section */
+#Grid-Introduction{
+    min-height: 100vh;
+
+    /*To center the elements*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+
+    /*Text style*/
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Fredoka', sans-serif;
+}
+#container-three{
+    text-align: center;
+}
+#container-four{
+    text-align: left;
+}
+#row-s-one{
+    display: flex;
+    flex-direction:row;
+    gap: 1vh;
+    align-items: center;
+    justify-content: center;
+}
+#s-one{
+    height: 6vh;
+    width: 6vh;
+    background-color: rgb(83, 124, 124);
+    padding: 0%;
+    border-radius: 1vh;
+}
+#s-one span{
+    height: auto;
+    width: auto;
+    line-height: 45px;
+}
+
+/* 4th Section */
+#Grid-Offsets{
+    min-height: 100vh;
+
+    /*To center the elements*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+
+    /*Text style*/
+    font-family: 'Fredoka', sans-serif;
+}
+#container-five p{
+    font-size: 2.3vh;
+}
+#off-set{
+    background-color: rgb(83, 124, 124);
+    color: aliceblue;
+}
+
+/* 5th Section */
+#Grid-PushPull{
+    min-height: 100vh;
+
+    /*To center the elements*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+
+    /*Text style*/
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Fredoka', sans-serif;
+}
+#container-six{
+    text-align: center;
+}
+#container-six p{
+    font-size: 2.1vh;
+}
+.card-panel{
+    background-color: rgb(83, 124, 124);
+    color: aliceblue;
+}
+
+/* 6th Section */
+#Grid-Layouts{
+    min-height: 100vh;
+
+    /*To center the elements*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+
+    /*Text style*/
+    font-family: 'Fredoka', sans-serif;
+}
+#container-seven{
+    text-align: center;
+}
+#container-seven p{
+    font-size: 2.1vh;
+}
+
+/* 7th Section */
+#Grid-Responsive{
+    min-height: 100vh;
+
+    /*To center the elements*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+
+    /*Text style*/
+    background-color: black;
+    color: aliceblue;
+    font-family: 'Fredoka', sans-serif;
+}
+#container-six{
+    text-align: center;
+}
+#container-six p{
+    font-size: 2.1vh;
+}
+.card-panel{
+    background-color: rgb(83, 124, 124);
+    color: aliceblue;
+}
+#container-eight{
+    text-align: center;
+}
+#container-eight p{
+    font-size: 2.1vh;
+}

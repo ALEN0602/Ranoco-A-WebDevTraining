@@ -1,0 +1,72 @@
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+}
+td{
+    color: #32354b;
+}
+p{
+    color: #32354b;
+    font-size: 105%;
+}
+.container{
+    background-color: rgba(255, 255, 255, 0.897);
+    backdrop-filter: blur(10px);
+    width: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 80px; 
+    padding-left: 80px; 
+    border-radius: 70px;
+}
+body{
+    background-color: #32354b;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+table{
+    color: #3949ab;
+}
+.striped>tbody>tr:nth-child(odd)>td,
+.striped>tbody>tr:nth-child(odd)>th {
+    background-color: #aab5f8;
+}
+div .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 30px;
+    align-items: center;
+}
+div .flex-container p{
+    width: 400px;
+    text-align:justify;
+}
+div .flex-container table{
+    width: 600px;
+}
+.card-panel{
+    width: auto;
+    padding-left: 80px;
+}
+code{
+    color: #3949ab;
+}
+table.highlight>tbody>tr:hover {
+    background-color:#aab5f8;
+}
+.images-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.images-container .responsive-img{
+    width: 100%;
+    max-width: 365px;
+    height: auto;
+}
+.btn{
+    background-color: #3949ab;
+}

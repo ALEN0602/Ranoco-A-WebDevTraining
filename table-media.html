@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="styleT&M.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+    </style>
+
+    <title>Table & Media | Ranoco, Alenbert B.</title>
+</head>
+<body>
+    <p style="text-align: center;" class="white-text">Sample Website | Alenbert B. Ranoco</p>
+    <h1 class="center" style="color: white;"> TABLE </h1>
+    <div class="divider"></div>
+
+    <br><br>
+
+    <!-- Table -->
+<div class="container">
+    <div class="flex-container">
+        <p>Tables are a nice way to organize a lot of data. We provide a few utility classes to help you style your table as easily as possible. In addition, to improve mobile experience, all tables on mobile-screen widths are centered automatically.</p>
+
+    <div style="overflow-x:auto;">
+        <table>
+            <thead style="text-transform: uppercase;">
+                <tr>
+                    <th>Name</th>
+                    <th>Item Name</th>
+                    <th>Item Price</th>
+                    <th>Mark up</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Alenbert</td>
+                    <td>Chevrolet Camaro ZL1</td>
+                    <td>$66,700</td>
+                    <td>10%</td>
+                </tr>
+                <tr>
+                    <td>Karyl</td>
+                    <td>DSLR Nikon D5</td>
+                    <td>$6,500</td>
+                    <td>5%</td>
+                </tr>
+                <tr>
+                    <td>Calvin</td>
+                    <td>Nike Air Jordan 1 Dior</td>
+                    <td>$15,000</td>
+                    <td>10%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    </div>
+    <br>
+    <div>
+    <div class="card-panel" style="border-radius: 40px;">
+        <h5 style="color: #3949ab; margin: 0%; font-weight: 200;">Language-MarkUp</h5>
+        <br>
+        <code>
+            &lt;table&gt; <br>
+            &emsp;&lt;thead&gt; <br>
+            &emsp;&emsp;&lt;tr&gt; <br>
+            &emsp;&emsp;&emsp;&emsp;&lt;th&gt;Name&lt;/th&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;th&gt;Item Name&lt;/th&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;th&gt;Item Price&lt;/th&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;th&gt;Mark Up&lt;/th&gt;<br>
+            &emsp;&emsp;&lt;/tr&gt; <br>
+            &emsp;&lt;thead&gt;<br><br>
+            &emsp;&lt;tbody&gt;<br>
+            &emsp;&emsp;&lt;tr&gt; <br>
+            &emsp;&emsp;&emsp;&emsp;&lt;th&gt;Alenbert&lt;/th&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;th&gt;Chevrolet Camaro ZL1&lt;/th&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;th&gt;$66,700&lt;/th&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;th&gt;10%&lt;/th&gt;<br>
+            &emsp;&emsp;&lt;/tr&gt; <br>
+            &emsp;&emsp;&lt;tr&gt; <br>
+            &emsp;&emsp;&emsp;&emsp;&lt;th&gt;Karyl&lt;/th&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;th&gt;DSLR Nikon D5&lt;/th&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;th&gt;$6,500&lt;/th&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;th&gt;5%&lt;/th&gt;<br>
+            &emsp;&emsp;&lt;/tr&gt; <br>
+            &emsp;&emsp;&lt;tr&gt; <br>
+            &emsp;&emsp;&emsp;&emsp;&lt;th&gt;Calvin&lt;/th&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;th&gt;Nike Air Jordan 1 Dior&lt;/th&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;th&gt;$15,000&lt;/th&gt;<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;th&gt;10%&lt;/th&gt;<br>
+            &emsp;&emsp;&lt;/tr&gt; <br>
+            &emsp;&lt;/tbody&gt;<br>
+            &lt;/table&gt; <br>
+        </code>
+    </div>
+</div>
+
+    <!--Striped Table-->
+    <br>
+    <h3 style="color:#32354b;">Striped Table</h3>
+        <p>Add class="striped" to the table tag for a striped table</p>
+    <div>
+            <table class="striped">
+                <thead style="text-transform: uppercase;">
+                    <tr>
+                        <th>Name</th>
+                        <th>Item Name</th>
+                        <th>Item Price</th>
+                        <th>Mark up</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr>
+                        <td>Alenbert</td>
+                        <td>Chevrolet Camaro ZL1</td>
+                        <td>$66,700</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>Karyl</td>
+                        <td>DSLR Nikon D5</td>
+                        <td>$6,500</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <td>Calvin</td>
+                        <td>Nike Air Jordan 1 Dior</td>
+                        <td>$15,000</td>
+                        <td>10%</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+
+    <!--Highlight Table-->
+    <br>
+    <h3 style="color:#32354b;">Highlight Table</h3>
+        <p>Add class="highlight" to the table tag for a highlight table.</p>
+    <div>
+            <table class="highlight">
+                <thead style="text-transform: uppercase;">
+                    <tr>
+                        <th>Name</th>
+                        <th>Item Name</th>
+                        <th>Item Price</th>
+                        <th>Mark up</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr>
+                        <td>Alenbert</td>
+                        <td>Chevrolet Camaro ZL1</td>
+                        <td>$66,700</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>Karyl</td>
+                        <td>DSLR Nikon D5</td>
+                        <td>$6,500</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <td>Calvin</td>
+                        <td>Nike Air Jordan 1 Dior</td>
+                        <td>$15,000</td>
+                        <td>10%</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+
+    <!--Centered Table-->
+    <br>
+    <h3 style="color:#32354b;">Centered Table</h3>
+        <p>Add class="centered" to the table tag to center align all the text in the table</p>
+    <div>
+            <table class="centered">
+                <thead style="text-transform: uppercase;">
+                    <tr>
+                        <th>Name</th>
+                        <th>Item Name</th>
+                        <th>Item Price</th>
+                        <th>Mark up</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr>
+                        <td>Alenbert</td>
+                        <td>Chevrolet Camaro ZL1</td>
+                        <td>$66,700</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>Karyl</td>
+                        <td>DSLR Nikon D5</td>
+                        <td>$6,500</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <td>Calvin</td>
+                        <td>Nike Air Jordan 1 Dior</td>
+                        <td>$15,000</td>
+                        <td>10%</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+
+    <!--Responsive  Table-->
+    <br>
+    <h3 style="color:#32354b;">Responsive  Table</h3>
+        <p>Add class="responsive-table" to the table tag to make the table horizontally scrollable on smaller screen widths.</p>
+    <div>
+            <table class="responsive-table">
+                <thead style="text-transform: uppercase;">
+                    <tr>
+                        <th>Name</th>
+                        <th>Item Name</th>
+                        <th>Item Price</th>
+                        <th>Mark up</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr>
+                        <td>Alenbert</td>
+                        <td>Chevrolet Camaro ZL1</td>
+                        <td>$66,700</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>Karyl</td>
+                        <td>DSLR Nikon D5</td>
+                        <td>$6,500</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <td>Calvin</td>
+                        <td>Nike Air Jordan 1 Dior</td>
+                        <td>$15,000</td>
+                        <td>10%</td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+
+<br><br>
+</div>
+<br><br>
+
+<!--Media CSS-->
+<h1 class="center" style="color: white;"> MEDIA CSS </h1>
+<div class="divider"></div>
+
+<br><br>
+
+<div class="container">
+    <h3 style="color:#32354b;"> Images </h3>
+    <p>Images can be styled in different ways using Materialize</p>
+
+    <!--Responsive Images-->
+    <p class="flow-text">Responsive Images</p>
+    <p>To make images resize responsively to page width, you can add the class responsive-img to your image tag. It will now have a max-width: 100% and height:auto.</p>
+    
+    <div class="card-panel" style="border-radius: 40px;">
+        <h5 style="color: #3949ab; margin: 0%; font-weight: 200;">Language-MarkUp</h5>
+        <br>
+        <code>
+            &lt;img class="responsive-img" src="img/image(1).jpg"&gt;
+        </code>
+    </div>
+
+        <div class="images-container">
+            <img src="img/image(1).jpg" alt="image1" class="responsive-img" style="border-radius: 20px;">
+            <img src="img/image(2).jpg" alt="image2" class="responsive-img" style="border-radius: 20px;">
+            <img src="img/image(3).jpg" alt="image2" class="responsive-img" style="border-radius: 20px;">
+        </div>
+    <br>
+
+    <p class="flow-text"> Circular Images </p>
+    <p>To make images appear circular, simply add class="circle" to them</p>
+
+    <div class="row">
+        <div class="col s12 m8">
+            <div class="card-panel grey lighten-5 z-depth-2" style="border-radius: 20px; padding-left: 24px;">
+                <div class="row valign-wrapper" style="margin: 0%;">
+                    <div class="col s3">
+                        <img src="img/image(4).jpg" alt="" class="responsive-img circle">
+                    </div>
+                <div class="col s10">
+                    <span class="black-text">
+                        This is a square image. Add the "circle" class to it to make it appear circular.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="card-panel" style="border-radius: 40px;">
+        <h5 style="color: #3949ab; margin: 0%; font-weight: 200;">Language-MarkUp</h5>
+        <br>
+        <code>
+            &lt;div class="col s12 m8"&gt; <br>
+            &emsp;&lt;div class="card-panel grey lighten-5 z-depth-2" style="border-radius: 20px; padding-left: 24px;"&gt; <br>
+            &emsp;&emsp;&lt;div class="row valign-wrapper" style="margin: 0%;"&gt; <br>
+            &emsp;&emsp;&emsp;&lt;div class="col s3"&gt; <br>
+            &emsp;&emsp;&emsp;&emsp;&lt;img src="image(4).jpg" alt="" class="responsive-img circle"&gt; <br>
+            &emsp;&emsp;&emsp;&lt;/div&gt; <br>
+            &emsp;&emsp;&emsp;&lt;div class="col s10"&gt; <br>
+            &emsp;&emsp;&emsp;&emsp;&lt;span class="black-text"&gt; <br>
+            &emsp;&emsp;&emsp;&emsp;&emsp;This is a square image. Add the "circle" class to it to make it appear circular.<br>
+            &emsp;&emsp;&emsp;&emsp;&lt;/span&gt; <br>
+            &emsp;&emsp;&emsp;&lt;/div&gt; <br>
+            &emsp;&emsp;&lt;/div&gt; <br>
+            &emsp;&lt;/div&gt; <br>
+            &lt;/div&gt; <br>
+        </code>
+    </div>
+
+    <br>
+    <!--Videos-->
+    <h3 style="color:#32354b;">Videos</h3>
+    <p>We provide a container for Embedded Videos that resizes them responsively.</p>
+
+    <!--Responsive Embeds-->
+    <p class="flow-text">Responsive Embeds</p>
+    <p>To make your embeds responsive, merely wrap them with a containing div which has the class video-container.</p>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eoTpdTU8nTA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="card-panel" style="border-radius: 40px;">
+        <h5 style="color: #3949ab; margin: 0%; font-weight: 200;">Language-MarkUp</h5>
+        <br>
+        <code>
+            &lt;div class="video-container"&gt; <br>
+            &emsp;&emsp;&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/eoTpdTU8nTA?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen&gt;&lt;/iframe&gt; <br>
+            &lt;/div&gt; <br>
+        </code>
+    </div>
+
+    <!--Responsive Videos-->
+    <p class="flow-text">Responsive Videos</p>
+    <p>To make your HTML5 Videos responsive just add the class responsive-video to the video tag.</p>
+
+    <video class="responsive-video" controls>
+        <source src="img/nightsky.mp4" type="video/mp4" width="560" height="315">
+    </video>
+
+    <div class="card-panel" style="border-radius: 40px;">
+        <h5 style="color: #3949ab; margin: 0%; font-weight: 200;">Language-MarkUp</h5>
+        <br>
+        <code>
+            &lt;video class="responsive-video" controls&gt; <br>
+            &emsp;&emsp;&lt;source src="nightsky.mp4" type="video/mp4" width="560" height="315"&gt;<br>
+            &lt;/video&gt; <br>
+        </code>
+    </div>
+
+    <br><br>
+    
+    <div class="flex-container" style="justify-content:first baseline;">
+        <div><h4>Help Materialize Grow</h4>
+            <p class="text1">We hope you have enjoyed using Materialize and if you feel like it has helped you out and want to support the team you can help us by donating or backing us on Patreon. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+            
+            <button class="btn">Support Us</button>
+        </div>
+
+        <div><h4>Join the Discussion</h4>
+            <p class="text2">We have a Gitter chat room set up where you can talk directly with us. Come in and discuss new features, future goals, general problems or questions, or anything else you can think of. </p>
+
+            <button class="btn">Chat</button>
+        </div>
+
+        <div><h4>Connect</h4>
+            <button class="fa-brands fa-github" style="width: 90px; height: 30px; font-size: 110%;"> Star</button>
+            <button class= "btn1" style="width: 90px; height: 30px; font-size: 110%"><strong>38,832</strong></button> 
+            <br><br>
+            <button class= "fa-brands fa-twitter" style="width: 185px; height: 30px; font-size: 65%; border-radius: 10px; background-color: deepskyblue; border-color:deepskyblue; color:aliceblue;"> Follow @MaterializeCSS</button>
+        </div>
+    </div>
+    <br><br>
+</div>
+
+    <!--Create enough spaces for our webpage-->
+    <div style="height: 100px;"></div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

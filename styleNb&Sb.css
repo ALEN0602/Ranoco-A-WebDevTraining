@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(157,54,255);
+    background: linear-gradient(148deg, rgba(157,54,255,1) 0%, rgba(33,212,255,1) 91%);
+}
+p{
+    color: aliceblue;
+    font-size: 105%;
+    line-height: 1.8;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    margin: 10px;
+}
+.card-panel{
+    border-radius: 40px;
+    box-shadow: 3px 10px 20px rgba(94, 94, 94, 0.425);
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+nav{
+    border-radius: 20px;
+    box-shadow: 0px 10px 10px rgba(94, 94, 94, 0.425);
+    width: 85%;
+    margin: auto; /* to center a div elements*/
+}
+li{
+    font-weight: 600;
+}
+div .container{
+    width: 90%;
+}
+.images-container{
+    padding: 10px;
+}
+.images-container img{
+    width: auto;
+    margin: auto;
+    height: 500px;
+    object-fit: cover; /*to fit the image inside the container*/
+}
+.btn{
+    background-color: #5851db;
+}
+.btn-large{
+    background-color: #5851db;
+}

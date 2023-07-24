@@ -1,0 +1,92 @@
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+}
+p{
+    color: aliceblue;
+    font-size: 105%;
+}
+body{
+    background: rgb(255,149,147);
+    background: linear-gradient(90deg, rgba(255,149,147,1) 0%, rgba(255,171,107,1) 72%);
+    padding: 10px;
+    padding-left: 9%;
+    padding-right: 9%;
+}
+.card-panel{
+    border-radius: 40px;
+    box-shadow: 3px 10px 20px rgba(94, 94, 94, 0.425);
+}
+div .flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    width: auto;
+    gap: 30px;
+    margin: 5px;
+}
+div .text-container{
+    text-align: right;
+    width: 450px;
+}
+div .images-container{
+    width: 600px;
+}
+.heading{
+    text-align: center;
+    margin: 10px;
+}
+td{
+    color: #5E5245;
+}
+th{
+    color: #ff908e;
+}
+table.highlight>tbody>tr:hover {
+    background-color:#ff9a4d6e;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 10px;
+    align-items: center;
+}
+.card{
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    background-color: #f1f1f1;
+    width: 350px;
+    margin: 0%;
+}
+.slider{
+    width: 500px;
+}
+.slider .slides{
+    border-radius: 20px;
+}
+.slider .slides img{
+    border-radius: 20px;
+}
+.btn{
+    background-color: #ff908e;
+}
+.box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    gap: 20px;
+}
+.box div{
+    padding: 5px;
+    text-align: left;
+    width: 350px;
+}
+.box div .text1{
+    color: #5E5245;
+}
+.box div .text2{
+    color: #5E5245;
+}

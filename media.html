@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="styleM.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+    </style>
+
+    <title>Media | Ranoco, Alenbert B.</title>
+</head>
+<body>
+
+    <!--Media-->
+    
+    <p style="text-align: center;">Sample Website | Alenbert B. Ranoco</p>
+        <h1 class="heading" style="text-transform: uppercase; color: aliceblue;">Media</h1>
+
+    <!--".divider" is used to create a divider line-->
+        <div class="divider"></div>
+
+        <p class="center">Media components include things that have to do with large media objects like Images, Video, Audio, etc.</p>
+    
+    <div class="card-panel">
+        <div class="flex-container">
+            <div class="text-container">
+
+                <!-- Material Box -->
+                <h3 style="color:#ff908e;">Material Box</h3>
+                    <p style="color: #5E5245">Material box is a material design implementation of the Lightbox plugin. When a user clicks on an image that can be enlarged, Material box centers the image and enlarges it in a smooth, non-jarring manner. To dismiss the image, the user can either click on the image again, scroll away, or press the ESC key.
+                    <br><br>
+                    Creating the image to the right with the effect is as simple as adding a materialboxed class to the image tag.</p>
+                    <div style="text-align: rigth;color: #5E5245; padding-top: 5px; font-size: small;">
+                        <h5 style="color: #ff908e; text-indent: 50px;">Language-MarkUp</h5>
+                        &lt;img class="materialboxed" width="650" src="images/sample-1.jpg"&gt;
+                    </div>
+            </div>
+            <div class="images-container">
+                <img src="img/image(6).jpg" alt="Citrus" class="responsive-img materialboxed" style="border-radius: 20px;">
+            </div>
+        </div>
+    </div>
+
+    <h5 style="color: #ffffff; font-weight: 600; text-align: right; margin-right: 50px;">Initialization</h5>
+    <div class="card-panel" style="text-align: left; color: #5E5245">
+            document.addEventListener('DOMContentLoaded', function() {<br>
+                &emsp;var elems = document.querySelectorAll('.materialboxed');<br>
+                &emsp;var instances = M.Materialbox.init(elems, options);<br>
+        });<br><br>
+        
+        &emsp;// Or with jQuery<br><br>
+        
+        $(document).ready(function(){<br>
+            &emsp;$('.materialboxed').materialbox();<br>
+        });
+    </div>
+        
+    <h5 style="color: #ffffff; font-weight: 600; text-align: right; margin-right: 50px;">Options</h5>
+
+    <div class="card-panel">
+    <table class="highlight">
+        <thead style="text-transform: uppercase;">
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>inDuration</td>
+                <td>Number</td>
+                <td>275</td>
+                <td>Transition in duration in milliseconds.</td>
+            </tr>
+            <tr>
+                <td>outDuration</td>
+                <td>Number</td>
+                <td>200</td>
+                <td>Transition out duration in milliseconds.</td>
+            </tr>
+            <tr>
+                <td>onOpenStart</td>
+                <td>Function</td>
+                <td>null</td>
+                <td>Callback function called before materialbox is opened.</td>
+            </tr>
+            <tr>
+                <td>onOpenEnd</td>
+                <td>Function</td>
+                <td>null</td>
+                <td>Callback function called after materialbox is opened.</td>
+            </tr>
+            <tr>
+                <td>onCloseStart</td>
+                <td>Function</td>
+                <td>null</td>
+                <td>Callback function called before materialbox is closed.</td>
+            </tr>
+            <tr>
+                <td>onCloseEnd</td>
+                <td>Function</td>
+                <td>null</td>
+                <td>Callback function called after materialbox is closed.</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <div class="divider" style="margin-top: 40px; margin-bottom: 40px;"></div>
+
+    <div class="card-panel" style="position: relative;">
+        <div class="flex-container">
+            <div class="text-container">
+
+                <!-- Methods -->
+                <h3 style="color:#ff908e;">Methods</h3>
+                    <p style="color: #5E5245">Because jQuery is no longer a dependency, all the methods are called on the plugin instance. You can get the plugin instance like this:</p>
+            </div>
+            <div class="images-container">
+                <h5 style="color: #ff908e;">Language-MarkUp</h5>
+                <img src="img/image(7).jpg" alt="Language-MarkUp" class="responsive-img" style="border-radius: 20px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="card">
+                <h6 style="color: #ff908e;">.open();</h6>
+                <p style="color: #5E5245">Open materialbox</p>
+                <p style="color: #5E5245"><strong>instance.open();</strong></p>
+        </div>
+        <div class="card">
+                <h6 style="color: #ff908e;">.close();</h6>
+                <p style="color: #5E5245">Close materialbox</p>
+                <p style="color: #5E5245"><strong>instance.close();</strong></p>
+        </div>
+        <div class="card" >
+                <h6 style="color: #ff908e;">.destroy();</h6>
+                <p style="color: #5E5245">Destroy plugin instance and teardown</p>
+                <p style="color: #5E5245"><strong>instance.destroy();</strong></p>
+        </div>
+    </div>
+
+    <h5 style="color: #ffffff; font-weight: 600; text-align: right; margin-right: 50px;">Properties</h5>
+    <div class="card-panel">
+    <table class="highlight">
+        <thead style="text-transform: uppercase;">
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>el</td>
+                <td>Element</td>
+                <td>The DOM element the plugin was initialized with.</td>
+            </tr>
+            <tr>
+                <td>options</td>
+                <td>Object</td>
+                <td>The options the instance was initialized with.</td>
+            </tr>
+            <tr>
+                <td>overlayActive</td>
+                <td>Boolean</td>
+                <td>If the materialbox overlay is showing.</td>
+            </tr>
+            <tr>
+                <td>doneAnimating</td>
+                <td>Boolean</td>
+                <td>If the carousel is no longer being animated.</td>
+            </tr>
+            <tr>
+                <td>caption</td>
+                <td>String</td>
+                <td>Caption if specified.</td>
+            </tr>
+            <tr>
+                <td>originalWidth</td>
+                <td>Number</td>
+                <td>Original width of image.</td>
+            </tr>
+            <tr>
+                <td>originalHeight</td>
+                <td>Number</td>
+                <td>Original height of image.</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <div class="card-panel">
+    <table class="highlight">
+        <thead style="text-transform: uppercase;">
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Default</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>inDuration</td>
+                <td>Number</td>
+                <td>275</td>
+                <td>Transition in duration in milliseconds.</td>
+            </tr>
+            <tr>
+                <td>outDuration</td>
+                <td>Number</td>
+                <td>200</td>
+                <td>Transition out duration in milliseconds.</td>
+            </tr>
+            <tr>
+                <td>onOpenStart</td>
+                <td>Function</td>
+                <td>null</td>
+                <td>Callback function called before materialbox is opened.</td>
+            </tr>
+            <tr>
+                <td>onOpenEnd</td>
+                <td>Function</td>
+                <td>null</td>
+                <td>Callback function called after materialbox is opened.</td>
+            </tr>
+            <tr>
+                <td>onCloseStart</td>
+                <td>Function</td>
+                <td>null</td>
+                <td>Callback function called before materialbox is closed.</td>
+            </tr>
+            <tr>
+                <td>onCloseEnd</td>
+                <td>Function</td>
+                <td>null</td>
+                <td>Callback function called after materialbox is closed.</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <div class="divider" style="margin-top: 40px; margin-bottom: 40px;"></div>
+
+    <div class="card-panel">
+        <div class="flex-container">
+            <div class="images-container">
+                <img class="materialboxed responsive-img" data-caption= "autumn carved a crestfallen winter" src="img/image(4).jpg" style="border-radius: 20px;">
+            </div>
+
+            <div class="text-container">
+                <!-- Captions -->
+                <h3 style="color:#ff908e; text-align: left;">Captions</h3>
+                    <p style="color: #5E5245; text-align: left;">It is very easy to add a short caption to your photo. Just add the caption as a data-caption attribute.</p>
+                        <h5 style="color: #ff908e;">Language-MarkUp</h5>
+                    <code style="color: #5E5245">
+                        &lt;img class="materialboxed" data-caption="A picture of a way with a group of trees in a park" width="250" src="https://lorempixel.com/800/400/nature/4"&gt;
+                    </code>
+            </div>
+        </div>
+    </div>
+    
+    <div class="divider" style="margin-top: 40px; margin-bottom: 40px;"></div>
+
+    <div class="card-panel">
+        <div class="flex-container">
+            <div class="text-container">
+            <!-- Slider -->
+                <h3 style="color:#ff908e; text-align: right;">Slider</h3>
+                    <p style="color: #5E5245; text-align: rigth;">Our slider is a simple and elegant image carousel. You can also have captions that will be transitioned on their own depending on their alignment. You can also have indicators that show up on the bottom of the slider.</p>
+
+                    <div style="text-align: left;color: #5E5245; padding-top: 5px; font-size: small;">
+                        <h5 style="color: #ff908e; text-indent: 50px;">Language-MarkUp</h5>
+                            &lt;div class="slider"&gt;<br>
+                            &emsp;&lt;ul class="slides"&gt;<br>
+                            &emsp;&emsp;&lt;li&gt;<br>
+                            &emsp;&emsp;&emsp;&lt;img src="https://lorempixel.com/580/250/nature/1"&gt;<br>
+                            &emsp;&emsp;&emsp;&lt;div class="caption center-align"&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;h3&gt;
+                            This is our big Tagline!&lt;/h3&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;h5 class="light grey-text text-lighten-3"&gt;
+                            Here's our small slogan.&lt;/h5&gt;<br>
+                            &emsp;&emsp;&emsp;&lt;/div&gt;<br>
+                            &emsp;&emsp;&lt;/li&gt;<br>
+
+                            &emsp;&emsp;&lt;li&gt;<br>
+                            &emsp;&emsp;&emsp;&lt;img src="https://lorempixel.com/580/250/nature/1"&gt;<br>
+                            &emsp;&emsp;&emsp;&lt;div class="caption center-align"&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;h3&gt;
+                            This is our big Tagline!&lt;/h3&gt;<br>
+                            &emsp;&emsp;&emsp;&emsp;&lt;h5 class="light grey-text text-lighten-3"&gt;
+                            Here's our small slogan.&lt;/h5&gt;<br>
+                            &emsp;&emsp;&emsp;&lt;/div&gt;<br>
+                            &emsp;&emsp;&lt;/li&gt;<br>
+                            &emsp;&lt;/ul&gt;<br>
+                            &lt;/div&gt;<br>
+                    </div>
+            </div>
+            <div class="slider" >
+                <ul class="slides">
+                    <li>
+                        <img src="img/image(1).jpg">
+                            <div class="caption center-align">
+                                <h3>This is our big Tagline!</h3>
+                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                    </li>
+                    <li>
+                        <img src="img/image(2).jpg">
+                            <div class="caption left-align">
+                                <h3>Left Aligned Caption</h3>
+                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                    </li>
+                    <li>
+                        <img src="img/image(3).jpg">
+                            <div class="caption right-align">
+                                <h3>Right Aligned Caption</h3>
+                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                    </li>
+                    <li>
+                        <img src="img/image(4).jpg">
+                            <div class="caption center-align">
+                                <h3>This is our big Tagline!</h3>
+                                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                            </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <h5 style="color: #ffffff; font-weight: 600; text-align: right; margin-right: 50px;">Initialization</h5>
+    <div class="card-panel" style="text-align: left; color: #5E5245">
+            document.addEventListener('DOMContentLoaded', function() {<br>
+                &emsp;var elems = document.querySelectorAll('.slider');<br>
+                &emsp;var instances = M.Slider.init(elems, options);<br>
+        });<br><br>
+        
+        &emsp;// Or with jQuery<br><br>
+        
+        $(document).ready(function(){<br>
+            &emsp;$('.slider').slider();<br>
+        });
+    </div>
+
+    <h5 style="color: #ffffff; font-weight: 600; text-align: right; margin-right: 50px;">Options</h5>
+    <div class="card-panel">
+        <table class="highlight">
+            <thead style="text-transform: uppercase;">
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Default</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>indicators</td>
+                    <td>Boolean</td>
+                    <td>true</td>
+                    <td>Set to false to hide slide indicators.</td>
+                </tr>
+                <tr>
+                    <td>height</td>
+                    <td>Number</td>
+                    <td>400</td>
+                    <td>Set height of slider.</td>
+                </tr>
+                <tr>
+                    <td>duration</td>
+                    <td>Number</td>
+                    <td>500</td>
+                    <td>Set the duration of the transition animation in ms.</td>
+                </tr>
+                <tr>
+                    <td>interval</td>
+                    <td>Number</td>
+                    <td>6000</td>
+                    <td>Set the duration between transitions in ms.</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+
+    <div class="divider" style="margin-top: 40px; margin-bottom: 40px;"></div>
+
+    <div class="card-panel" style="position: relative;">
+        <div class="flex-container">
+            <div class="text-container">
+
+                <!-- Methods -->
+                <h3 style="color:#ff908e;">Methods</h3>
+                    <p style="color: #5E5245">We have methods to pause, start, move to next and move to previous slide.<br><br>
+                    Because jQuery is no longer a dependency, all the methods are called on the plugin instance. You can get the plugin instance like this:</p>
+
+            </div>
+            <div class="images-container">
+                <h5 style="color: #ff908e;">Language-MarkUp</h5>
+                <img src="img/image(8).jpg" alt="Language-MarkUp" class="responsive-img materialboxed" style="border-radius: 20px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="card">
+                <h6 style="color: #ff908e;">.pause();</h6>
+                <p style="color: #5E5245">Pause slider autoslide</p>
+                <p style="color: #5E5245"><strong> instance.pause();</strong></p>
+        </div>
+        <div class="card">
+                <h6 style="color: #ff908e;">.start();</h6>
+                <p style="color: #5E5245">Start slider autoslide</p>
+                <p style="color: #5E5245"><strong> instance.start();</strong></p>
+        </div>
+        <div class="card" >
+                <h6 style="color: #ff908e;">.next();</h6>
+                <p style="color: #5E5245">Move to next slider</p>
+                <p style="color: #5E5245"><strong> instance.next();</strong></p>
+        </div>
+        <div class="card" >
+                <h6 style="color: #ff908e;">.prev();</h6>
+                <p style="color: #5E5245">Move to prev slider
+                </p>
+                <p style="color: #5E5245"><strong> instance.prev();</strong></p>
+        </div>
+        <div class="card" >
+                <h6 style="color: #ff908e;">.destroy();</h6>
+                <p style="color: #5E5245">Destroy plugin instance and teardown</p>
+                <p style="color: #5E5245"><strong> instance.destroy();</strong></p>
+        </div>
+    </div>
+
+    <h5 style="color: #ffffff; font-weight: 600; text-align: right; margin-right: 50px;">Properties</h5>
+    <div class="card-panel">
+    <table class="highlight">
+        <thead style="text-transform: uppercase;">
+            <tr>
+                <th>Name</th>
+                <th>Type</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>el</td>
+                <td>Element</td>
+                <td>The DOM element the plugin was initialized with.</td>
+            </tr>
+            <tr>
+                <td>options</td>
+                <td>Object</td>
+                <td>The options the instance was initialized with.</td>
+            </tr>
+            <tr>
+                <td>activeIndex</td>
+                <td>Number</td>
+                <td>Index of current slide.</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <div class="divider" style="margin-top: 40px; margin-bottom: 40px;"></div>
+
+    <div class="card-panel" style="position: relative;">
+        <div class="text-container1" style="padding-left: 3%;">
+
+            <!-- Fullscreen Slider -->
+            <h3 style="color:#ff908e;">Fullscreen Slider</h3>
+                <p style="color: #5E5245">You can easliy make this slider a fullscreen slider by adding the class fullscreen to the slider div. Here's a quick demo.</p>
+                    <a href="https://materializecss.com/fullscreen-slider-demo.html#!"><button class="btn">Open Demo</button></a>
+        </div>
+    </div>
+    
+<div class="card-panel" style="position: relative;">
+    <div class="box">
+
+        <div style="color:#ff908e;"><h4>Help Materialize Grow</h4>
+            <p class="text1">We hope you have enjoyed using Materialize and if you feel like it has helped you out and want to support the team you can help us by donating or backing us on Patreon. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+            
+            <button class="btn">Support Us</button>
+        </div>
+
+        <div style="color:#ff908e;"><h4>Join the Discussion</h4>
+            <p class="text2">We have a Gitter chat room set up where you can talk directly with us. Come in and discuss new features, future goals, general problems or questions, or anything else you can think of. </p>
+
+            <button class="btn">Chat</button>
+        </div>
+
+        <div style="color:#ff908e;"><h4>Connect</h4>
+            <button class="fa-brands fa-github" style="width: 90px; height: 30px; font-size: 110%;"> Star</button>
+            <button class= "btn1" style="width: 90px; height: 30px; font-size: 110%"><strong>38,832</strong></button> 
+            <br><br>
+            <button class= "fa-brands fa-twitter" style="width: 185px; height: 30px; font-size: 65%; border-radius: 10px; background-color: deepskyblue; border-color:deepskyblue; color:aliceblue;"> Follow @MaterializeCSS</button>
+        </div>
+    </div>
+</div>
+    
+    <!--Create enough spaces for our webpage-->
+    <div style="height: 100px;"></div>
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //Materialized Init
+            $('.materialboxed').materialbox({
+                inDuration:500,
+                outDuration: 275,
+            });
+            //Slider Init
+            $('.slider').slider({
+                duration:900,
+                height: 650,
+            });
+        });
+    </script>
+</body>
+</html>
