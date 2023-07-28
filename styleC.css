@@ -1,0 +1,48 @@
+header nav{
+    background-color: rgb(41, 44, 46);
+    color: aliceblue;
+}
+.nav-wrapper a{
+    color: aliceblue !important;
+    font-size: 200%;
+}
+#cards{
+    padding-left: 7%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: rgb(41, 44, 46);
+    color: aliceblue;
+}
+#cards p{
+    width: 500px;
+    font-size: small;
+    color: rgb(204, 208, 211);
+}
+.card{
+    background-color:rgb(240, 248, 255);
+    height: 300px;
+}
+div .card-content{
+    color: rgb(41, 44, 46);
+}
+div .card-content p{
+    font-size: small;
+}
+a{
+    font-size: small;
+    color:rgb(155, 31, 167) !important;
+}
+img{
+    object-fit: cover;
+    height: 110px;
+}
+span{
+    font-family:'Bebas Neue', sans-serif; 
+    line-height: 95%;
+}
+.tab a{
+    color: antiquewhite !important;
+}
+.whitetab a{
+    color: black !important;
+}

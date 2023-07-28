@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav-wrapper{
+    background-color: rgb(27, 27, 27);
+}
+.nav-wrapper .header a{
+    font-family: 'Staatliches', cursive;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Staatliches', cursive;
+}
+.second-p-container {
+    height: 400px;
+}
+.btn {
+    transition-duration: 0.5s;
+    background-color: rgb(27, 27, 27);
+}
+.btn:hover{
+    background-color: rgb(77, 66, 139);
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="styleC.css">
+
+    <!-- Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    </style>
+
+    <title>Cards | Ranoco, Alenbert B.</title>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="nav-wrapper" style="text-align: center;">
+            <a href="#"><i class="fa-solid fa-layer-group fa-lg"></i>
+            <span span style="letter-spacing: 4px;">CARDS</span></a>
+        </div>
+    </nav>
+</header>
+<br>
+
+    <div id="cards">
+        <h4 style="font-family:'Bebas Neue', sans-serif;";>Cards</h4>
+        <p>Cards are a convenient means of displaying content composed of different types of objects. They’re also well-suited for presenting similar objects whose size or supported actions can vary considerably, like photos with captions of variable length.</p>
+    </div>
+
+<section style="background-color: rgb(41, 44, 46)">
+
+    <div class="row container" style="width: 95%;" id="row-main">
+        <br>
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Basic Card</span>
+                    <p>I am a very simple card. I am good at containing small bits of information.I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
+                </div>
+            </div>        
+        </div>
+
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/image(5).jpg" height=230px>
+                    <span class="card-title">Image Card</span>
+                </div>
+                <div class="card-content">
+                    <p>Here is the standard card with an image thumbnail.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
+            </div>     
+        </div>
+
+        <!-- FABS in Card -->
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="img/image(6).jpg">
+                    <a class="btn-floating halfway-fab waves-effect waves-light orange"><i class="fa-solid fa-plus"></i></a>
+                </div>
+                <div class="card-content">
+                    <span class="card-title">FABs in Cards</span>
+                    <p>Here is an image card with a Floating Action Button.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Horizontal Card -->
+        <div class="col s12 m6 l3">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="https://images.pexels.com/photos/169789/pexels-photo-169789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" style="height: 100%;">
+                    <span class="card-title">Horizontal Card</span>
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>Here is the standard card with a horizontal image.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Reveal -->
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator">Card Reveal<i class="fa-solid fa-ellipsis-vertical right"></i></span>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title">Card Reveal<i class="fa-solid fa-xmark right"></i></span>
+                        <p>A card that reveals more information once clicked. Just add the card-reveal div with a span.card-title inside to make this work. The default state is having the card-reveal go over the card-action.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card Reveal Sticky-Action -->
+        <div class="col s12 m6 l3">
+            <div class="card sticky-action">
+                <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator" src="https://images.pexels.com/photos/4041407/pexels-photo-4041407.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                </div>
+                <div class="card-content">
+                    <span class="card-title activator">Card Reveal <i>(Sticky-Action)</i><i class="fa-solid fa-ellipsis-vertical right"></i></span>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title">Card Reveal<i class="fa-solid fa-xmark right"></i></span>
+                        <p>You can make your card-action always visible by adding the class sticky-action to the overall card.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs in Cards (White)-->
+        <div class="col s12 m6 l3">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Tabs in Cards <i>(White)</i></span>
+                    <p>You can add tabs to your cards by adding a dividing cards-tabs div inbetween your header content and your tab content. Basic white background card with tabs.</p>
+                    
+                </div>
+                <div class="card-tabs">
+                    <ul class="tabs whitetab tabs-fixed-width">
+                        <li class="tab"><a href="#test1">Test 1</a></li>
+                        <li class="tab"><a href="#test2">Test 2</a></li>
+                        <li class="tab"><a href="#test3">Test 3</a></li>
+                    </ul>
+                </div>
+                <div class="card-content grey lighten-4">
+                    <div id="test1">Test 1</div>
+                    <div id="test2">Test 2</div>
+                    <div id="test3">Test 3</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs in Cards (Colored)-->
+        <div class="col s12 m6 l3">
+            <div class="card blue-grey">
+                <div class="card-content">
+                    <span class="card-title white-text">Tabs in Cards <i>(Colored)</i></span>
+                    <p class="white-text">You can add tabs to your cards by adding a dividing cards-tabs div inbetween your header content and your tab content.</p>
+                </div>
+                <div class="card-tabs">
+                    <ul class="tabs tabs-fixed-width tabs-transparent">
+                        <li class="tab"><a href="#test4">Test 4</a></li>
+                        <li class="tab"><a href="#test5">Test 5</a></li>
+                        <li class="tab"><a href="#test6">Test 6</a></li>
+                    </ul>
+                </div>
+                <div class="card-content grey lighten-4">
+                    <div id="test4">Test 4</div>
+                    <div id="test5">Test 5</div>
+                    <div id="test6">Test 6</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col s12 m6 l3">
+            <div class="card small">
+                <div class="card-image">
+                    <img src="https://images.pexels.com/photos/3052361/pexels-photo-3052361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" height=230px>
+                    <span class="card-title">Card Sizes <i>(Small)</i></span>
+                </div>
+                <div class="card-content">
+                    <p>The Small Card limits the height of the card to 300px.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
+                </div>
+            </div>     
+        </div>
+
+        <div class="col s12 m6 l3">
+            <div class="card medium">
+                <div class="card-image">
+                    <img src="https://images.pexels.com/photos/17229381/pexels-photo-17229381/free-photo-of-person-taking-photo-of-corridor.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" height=230px>
+                    <span class="card-title">Card Sizes <i>(Medium)</i></span>
+                </div>
+                <div class="card-content">
+                    <p>The Medium Card limits the height of the card to 400px.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
+                </div>
+            </div>     
+        </div>
+
+        <div class="col s12 m6 l3">
+            <div class="card large">
+                <div class="card-image">
+                    <img src="https://images.pexels.com/photos/339119/pexels-photo-339119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" height=230px>
+                    <span class="card-title">Card Sizes <i>(Large)</i></span>
+                </div>
+                <div class="card-content">
+                    <p>The Large Card limits the height of the card to 500px.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#">This is a link</a>
+                    <a href="#">This is a link</a>
+                </div>
+            </div>     
+        </div>
+
+        <div class="col s12 m6 l3">
+            <div class="card-panel">
+                <h3 class="blue-grey-text" style="font-family:'Bebas Neue', sans-serif">Card Panel</h3>
+                <p class="blue-grey-text">For a simpler card with less markup, try using a card panel which just has padding and a shadow effect.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.tabs').tabs();
+        });
+    </script>
+</body>
+
+</html>
